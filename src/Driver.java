@@ -24,13 +24,17 @@ public class Driver {
 	      list1.add(700);
 	      list1.add(400);
 	      list1.add(500);
+	      System.out.println("original list");
+	      for (Integer num: list1)
+        	  System.out.println(num);
 	      
 	      HashSet<Integer> set = new HashSet<Integer>(list1);
 	      
 	      List<Integer> list2 = new ArrayList<Integer> (set);
 	      
-	      
-
+          System.out.println("List after set removes duplicates");
+          for (Integer num: list2)
+        	  System.out.println(num);
 	}
 
 }
