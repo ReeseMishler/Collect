@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.TreeMap;
 
 public class Driver {
 
@@ -45,6 +46,17 @@ public class Driver {
           countryMap.put("Finland", 3);
           countryMap.put("USA", 4);
           countryMap.put("Canada", 5);
+          
+          System.out.println("original country map");
+	      for (String key: countryMap.keySet())
+        	  System.out.println(key);
+          
+          TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
+          treeMap.putAll(countryMap);
+          
+          System.out.println("country map after being put into a treeMap");
+          for (String key: treeMap.keySet())
+        	  System.out.println(key);
           
           
 	}
