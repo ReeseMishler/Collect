@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Driver {
@@ -23,6 +24,9 @@ public class Driver {
 	      list1.add(700);
 	      list1.add(400);
 	      list1.add(500);
+	      
+	      HashSet<Integer> set = new HashSet<Integer>(list1);
+	      
 	      
 
 	}
