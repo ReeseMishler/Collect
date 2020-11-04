@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
@@ -35,6 +36,17 @@ public class Driver {
           System.out.println("List after set removes duplicates");
           for (Integer num: list2)
         	  System.out.println(num);
+          
+          //Show HashMap and TreeMap examples
+          
+          HashMap<String, Integer> countryMap = new HashMap<String, Integer>();
+          countryMap.put("Germany", 1);
+          countryMap.put("Brazil", 2);
+          countryMap.put("Finland", 3);
+          countryMap.put("USA", 4);
+          countryMap.put("Canada", 5);
+          
+          
 	}
 
 }
